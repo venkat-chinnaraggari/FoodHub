@@ -1,0 +1,191 @@
+/* ======================================
+   RESET
+====================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#ffffff;
+    color:#222;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:min(1200px,90%);
+    margin:auto;
+}
+
+/* ======================================
+   NAVBAR
+====================================== */
+
+.guest-navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#ffffff;
+    border-bottom:1px solid #ececec;
+}
+
+.navbar-container{
+    height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.navbar-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:24px;
+    font-weight:800;
+}
+
+.guest-navbar .navbar-logo img{
+    height:70px !important;
+    width:auto !important;
+    max-width:none;
+    display:block;
+}
+
+#app-name{
+    color:#ff6b35;
+}
+
+.navbar-menu{
+    display:flex;
+    gap:30px;
+}
+
+.navbar-menu a{
+    color:#444;
+    font-weight:500;
+}
+
+.navbar-menu a:hover{
+    color:#ff6b35;
+}
+
+.navbar-actions{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+/* ======================================
+   BUTTONS
+====================================== */
+
+.btn{
+    padding:10px 18px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+.btn-primary{
+    background:#ff6b35;
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#ea5b28;
+}
+
+.btn-outline{
+    border:1px solid #ff6b35;
+    color:#ff6b35;
+}
+
+.btn-outline:hover{
+    background:#fff3ee;
+}
+
+.nav-link{
+    color:#444;
+    font-weight:500;
+}
+
+.nav-icon{
+    color:#444;
+    font-size:18px;
+}
+
+/* ======================================
+   FOOTER
+====================================== */
+
+.guest-footer{
+    margin-top:80px;
+
+    background:#111827;
+    color:white;
+}
+
+.footer-container{
+    padding:60px 0;
+
+    display:grid;
+    grid-template-columns:
+        2fr 1fr 1fr 1fr;
+
+    gap:40px;
+}
+
+.footer-brand p{
+    margin-top:15px;
+    color:#bdbdbd;
+    line-height:1.8;
+}
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.footer-links h4{
+    margin-bottom:10px;
+}
+
+.footer-links a,
+.footer-links p{
+    color:#cfcfcf;
+}
+
+.footer-links a:hover{
+    color:#ff6b35;
+}
+
+.footer-bottom{
+    text-align:center;
+
+    padding:20px;
+
+    border-top:1px solid #2a2a2a;
+
+    color:#aaaaaa;
+}
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+@media(max-width:768px){
+
+    .navbar-menu{
+        display:none;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+    }
+}
